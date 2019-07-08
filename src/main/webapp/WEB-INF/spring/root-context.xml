@@ -5,8 +5,10 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	<bean id="hikariDS" class="com.zaxxer.hikari.HikariDataSource">
-		<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe"/>
-		<property name="username" value="osfu"/>
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@project.ceedkljxtcil.ap-northeast-2.rds.amazonaws.com:1588:ORCL"/>
+		<property name="username" value="cho"/>
+		<!-- <property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+		<property name="username" value="osfu"/> -->
 		<property name="password" value="12345678"/>
 		<property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
 		<!-- <property name="maximumPoolSize" value="10"/>
